@@ -15,4 +15,4 @@
 - API requests:
 
   - Image upload:
-    curl http://127.0.0.1:7000/img_upload/ -H 'Authorization: Token 83ad3234729c4b3c03b32a75297444d64761e359' -H 'Content-Type: multipart/form-data' -F 'img_file=@/path_to_img_file/test.jpg'
+    curl http://127.0.0.1:7000/img_upload/ -H 'Authorization: Token <token>' -H 'Content-Type: multipart/form-data' -F 'img_file=@/path_to_img_file/test.jpg'
