@@ -16,3 +16,6 @@
 
   - Image upload:
     curl http://127.0.0.1:7000/img_upload/ -H 'Authorization: Token _token_' -H 'Content-Type: multipart/form-data' -F 'img_file=@/path_to_img_file/test.jpg'
+
+
+- NOTE: DB is used only to make access tokens persistent and no meta data of images are being stored in the DB
