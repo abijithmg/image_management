@@ -15,7 +15,11 @@
 - API requests:
 
   - Image upload:
-    curl http://127.0.0.1:7000/img_upload/ -H 'Authorization: Token _token_' -H 'Content-Type: multipart/form-data' -F 'img_file=@/path_to_img_file/test.jpg'
+    curl -X POST http://127.0.0.1:7000/img_upload/ -H 'Authorization: Token _token_' -H 'Content-Type: multipart/form-data' -F 'img_file=@/path_to_img_file/test.jpg'
+  - Image list:
+    curl -X GET -H 'Content-Type:application/json'
+                                -H 'Authorization: Token 83ad3234729c4b3c03b32a75297444d64761e359
+                                http://127.0.0.1:7000/img_list/
 
 
 - NOTE: DB is used only to make access tokens persistent and no meta data of images are being stored in the DB
